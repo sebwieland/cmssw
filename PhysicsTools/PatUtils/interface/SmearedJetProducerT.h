@@ -294,69 +294,91 @@ public:
                 if (jet.pt() < 50 and abs(jet.eta()) <= 1.93) {
                     jet.addUserFloat("HelperJERpt0eta0up", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
-                // std::cout << "DEBUUUUG: HelperJERpt0eta0up" << std::endl; 
-                // std::cout << "DEBUUUUG: pt " << jet.pt() <<  std::endl; 
-                // std::cout << "DEBUUUUG: eta " << jet.eta() <<  std::endl; 
-                // std::cout << "DEBUUUUG: SMEARFACTOR " << smearFactor <<  std::endl; 
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt0eta0up", smearFactor / smearFactor_nom);
+                }
                 break; 
             case -2: // JERpt0eta0down
                 if (jet.pt() < 50 and abs(jet.eta()) <= 1.93) {
                     jet.addUserFloat("HelperJERpt0eta0down", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
-                // std::cout << "DEBUUUUG: HelperJERpt0eta0down" << std::endl; 
-                // std::cout << "DEBUUUUG: pt " << jet.pt() <<  std::endl; 
-                // std::cout << "DEBUUUUG: eta " << jet.eta() <<  std::endl; 
-                // std::cout << "DEBUUUUG: SMEARFACTOR " << smearFactor <<  std::endl;     
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt0eta0down", smearFactor / smearFactor_nom);
+                }
                 break; 
             case 3: // JERpt0eta1up
                 if (jet.pt() < 50 and 1.93 < abs(jet.eta()) and abs(jet.eta()) < 2.5) {
                     jet.addUserFloat("HelperJERpt0eta1up", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt0eta1up", smearFactor / smearFactor_nom);
+                }
                 break; 
             case -3: // JERpt0eta1down
                 if (jet.pt() < 50 and 1.93 < abs(jet.eta()) and abs(jet.eta()) < 2.5) {
                     jet.addUserFloat("HelperJERpt0eta1down", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt0eta1down", smearFactor / smearFactor_nom);
+                }
                 break; 
             case 4: // JERpt1eta0up
                 if (jet.pt() >= 50  and abs(jet.eta()) <= 1.93) {
                     jet.addUserFloat("HelperJERpt1eta0up", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt1eta0up", smearFactor / smearFactor_nom);
+                }
                 break; 
             case -4: // JERpt1eta0down
                 if (jet.pt() >= 50  and abs(jet.eta()) <= 1.93) {
                     jet.addUserFloat("HelperJERpt1eta0down", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt1eta0down", smearFactor / smearFactor_nom);
+                }
                 break; 
             case 5: // JERpt1eta1up
                 if (jet.pt() >= 50 and 1.93 < abs(jet.eta()) and abs(jet.eta()) < 2.5) {
                     jet.addUserFloat("HelperJERpt1eta1up", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt1eta1up", smearFactor / smearFactor_nom);
+                }
                 break; 
             case -5: // JERpt1eta1down
                 if (jet.pt() >= 50 and 1.93 < abs(jet.eta()) and abs(jet.eta()) < 2.5) {
                     jet.addUserFloat("HelperJERpt1eta1down", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJERpt1eta1down", smearFactor / smearFactor_nom);
+                }
                 break; 
             case 6: // JEReta2up
                 if (abs(jet.eta()) >= 2.5) {
                     jet.addUserFloat("HelperJEReta2up", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJEReta2up", smearFactor / smearFactor_nom);
+                }
                 break; 
             case -6: // JEReta2down
                 if (abs(jet.eta()) >= 2.5) {
                     jet.addUserFloat("HelperJEReta2down", smearFactor / smearFactor_nom);
                 } 
-                else smearFactor = 1.;
+                else {
+                    smearFactor = 1.;
+                    jet.addUserFloat("HelperJEReta2down", smearFactor / smearFactor_nom);
+                }
                 break; 
 
             }   
