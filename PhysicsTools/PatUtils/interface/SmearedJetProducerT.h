@@ -402,6 +402,7 @@ public:
                 }
                 break; 
 
+            }
 
             T smearedJet = jet;
             smearedJet.scaleEnergy(smearFactor);
